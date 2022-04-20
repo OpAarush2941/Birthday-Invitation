@@ -3,10 +3,11 @@ body{
 }
 
 #img{
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 300px;
     box-shadow: 10px 10px 10px gray;
     border-radius: 20px;
+    font-family: "Sofia", sans-serif;
 }
 
 .heading{
@@ -28,7 +29,34 @@ body{
     font-family: "Sofia", sans-serif;
 }
 
-/*#invBtn{
-    float: center;
-    margin-right: 400px;
-}*/
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+    animation: 2s linear infinite condemned_blink_effect;
+  }
+  
+  @-webkit-keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  label{
+      font-size: 20px;
+  }
